@@ -1,0 +1,5 @@
+dist/
+content/
+public/
+yarn.lock
+*.md

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" id="theme-color" />
+    <link rel="icon" href="/favicon.ico?v=0" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg?v=0" type="image/svg+xml" />
+    <link rel="canonical" href="https://hoangvd97.github.io/" />
+    <title>Hoang's Blog</title>
+    <meta name="description" content="Where I jot down what I learned during my coding career." />
+    <meta property="og:title" content="Hoang's Blog" />
+    <meta property="og:description" content="Where I jot down what I learned during my coding career." />
+    <meta property="og:image" content="https://hoangvd97.github.io/img/og-image-200.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:url" content="https://hoangvd97.github.io/" />
+    <meta property="og:type" content="website" />
+    <script>
+      ;(function () {
+        var theme
+        try {
+          theme = localStorage.getItem('theme')
+        } catch (e) {}
+        if (theme !== 'dark' && theme !== 'light') {
+          theme = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+        document.documentElement.dataset.theme = theme
+        if (theme === 'dark') document.getElementById('theme-color').content = '#2d2d2d'
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
