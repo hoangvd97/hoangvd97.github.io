@@ -15,6 +15,7 @@ export const site = {
   tags: {
     algorithm: 'Algorithm',
     backend: 'Backend',
+    extensions: 'Extensions',
     frontend: 'Frontend',
     javascript: 'JavaScript',
     opinion: 'Opinion',
